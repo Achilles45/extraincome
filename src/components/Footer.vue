@@ -39,12 +39,12 @@
                               <p class="pl-4">extraincomeinvestment144@gmail.com</p>
                           </div>
                       </div>
-                       <!-- <div class="first d-flex">
+                       <div class="first d-flex">
                           <i class="fa fa-phone"></i>
                           <div class="content">
-                              <p class="pl-4">+234-8106-583-308</p>
+                              <p class="pl-4">08164950288</p>
                           </div>
-                      </div> -->
+                      </div>
                   </div>
               </div>
           </div><br>

@@ -3,7 +3,7 @@
       <div class="container">
         <div class="row">
             <div class="col-md-6">
-                 <i class="fa fa-phone"></i>&nbsp;&nbsp; +2349022131450 &nbsp;  (Mon - Fri, 9am to 4pm)
+                 <i class="fa fa-phone"></i>&nbsp;&nbsp; 08164950288 &nbsp;  (Mon - Fri, 9am to 4pm)
             </div>
             <div class="col-md-6">
                  <i class="fa fa-envelope"></i>&nbsp;&nbsp; extraincomeinvestment144@gmail.com
