@@ -8,6 +8,7 @@ import Dashboard from '../views/Dashboard.vue'
 import Profile from '../views/Profile.vue'
 import Withdrawal from '../views/Withdrawal.vue'
 import Payment from '../views/Payment.vue'
+import Upload from '../views/Upload.vue'
 import firebase from 'firebase'
 Vue.use(VueRouter)
 

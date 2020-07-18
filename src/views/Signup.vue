@@ -46,12 +46,12 @@
                             <option value="250,000 promo">&#8358;300,000 to &#8358;900,000 (Promo plan)</option>
                             <option value="300,000 promo">&#8358;300,000 to &#8358;650,000 (Promo plan)</option>
                             <option value="400,000 promo">&#8358;400,000 to &#8358;1,200,000 (Promo plan)</option>
-                            <option value="500,000 promo">&#8358;500,000 to &#8358;1,500,000 (Gold plan)</option>
-                            <option value="600,000 promo">&#8358;600,000 to &#8358;1,800,000 (Promo plan)</option>
-                            <option value="700,000 promo">&#8358;700,000 to &#8358;2,100,000 (Promo plan)</option>
-                            <option value="800,000 promo">&#8358;800,000 to &#8358;2,400,000 (Promo plan)</option>
-                            <option value="900,000 promo">&#8358;900,000 to &#8358;2,700,000 (Promo plan)</option>
-                            <option value="900,000 promo">&#8358;1,000,000 to &#8358;3,000,000 (Promo plan)</option>
+                            <option value="500,000 promo">&#8358;500,000 to &#8358;1,500,000 (Promo plan)</option>
+                            <option value="600,000 Gold jackpot">&#8358;600,000 to &#8358;1,800,000 (Gold jackpot)</option>
+                            <option value="700,000 Gold jackpot">&#8358;700,000 to &#8358;2,100,000 (Gold jackpot)</option>
+                            <option value="800,000 Gold jackpot">&#8358;800,000 to &#8358;2,400,000 (Gold jackpot)</option>
+                            <option value="900,000 Gold jackpot">&#8358;900,000 to &#8358;2,700,000 (Gold jackpot)</option>
+                            <option value="900,000 Gold jackpot">&#8358;1,000,000 to &#8358;3,000,000 (Gold jackpot)</option>
                          </select>
                </div>
                <div class="form-group">
