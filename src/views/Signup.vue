@@ -23,7 +23,6 @@
                <div class="form-group">
                       <small id="passwordHelpBlock" class="form-text text-muted">Select Your Amount</small>
                   <select class="form-control" id="inlineFormCustomSelect" v-model="account_type">
-                            <option selected>Select Investment Plan</option>
                             <option value="20,000">&#8358;20,000 to &#8358;30,000</option>
                             <option value="30,000">&#8358;30,000 to &#8358;45,000</option>
                             <option value="40,000">&#8358;40,000 to &#8358;60,000</option>
