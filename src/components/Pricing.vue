@@ -48,7 +48,7 @@
               </div> -->
                <div class="card__content card3">
                  <div class="header text-center">
-                     <h4>GOLD PLAN/PACKAGE</h4>
+                     <h4>GOLD PLAN/PACKAGE (7 working days)</h4>
                  </div>
                  <div class="body">
                     <h6><i class="fa fa-check-square"></i> &#8358;300,000 to &#8358;600,000 (Gold package)</h6>
@@ -57,7 +57,7 @@
                     <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;600,000 to &#8358;1,200,000 (Gold package)</h6>
                     <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;700,000 to &#8358;1,400,000 (Gold package)</h6>
 
-                    <h4 class="header text-center">VVIP PACKAGE</h4>
+                    <h4 class="header text-center">VVIP PACKAGE (14 working days)</h4>
                     <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;800,000 to &#8358;1,800,000</h6>
                     <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;900,000 to &#8358;2,000,000</h6>
                     <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;1,000,000 to &#8358;2,200,000</h6>
