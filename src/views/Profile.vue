@@ -13,6 +13,7 @@
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
                 <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr> 
                     <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
+                     <li><router-link to="/dashboard/upload"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Upload Payment</router-link></li><hr>
                 <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
@@ -21,8 +22,8 @@
            <div class="dashboard__right ">
               <div class="heading d-flex justify-content-between">
                   <div class="content">
-                      <h4>You are logged as </h4>
-                      <h2>{{name}}</h2>
+                      <h5 style="color: white">You are logged as </h5>
+                      <h3 style="color: white">{{name}}</h3>
                       <!-- <small>{{ firstCode }}</small> -->
                   <!-- <small>{{ accountNumber }}</small> -->
                   </div>
@@ -161,7 +162,7 @@ export default {
     grid-template-columns:  260px 1fr;
     // grid-gap: 30px;
   .dashboard__left{
-        background: #252525;
+        background: #0c0f1b;
         padding: 1rem 2rem;
         color:#fff;
         height: 100% !important;
@@ -195,8 +196,19 @@ export default {
         }
     }
     .dashboard__right{
-        background: #fafafa;
+        background: #0c0f1b;
         padding: 3rem 2.5rem;
+        .heading{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  position: relative;
+                  .navbar__toggler{
+                      color:$primary-color;
+                      position: absolute;
+                      right: 5%;
+                  }
+              }
        small{
            color:#627081;
            font-size: .8rem;
@@ -276,9 +288,9 @@ export default {
                  }
                  label{
                      font-size: .8rem;
-                     font-weight: bold;
-                     color:#545454;
-                     opacity: .7;
+                     font-weight: normal;
+                     color:#fff;
+                     opacity: .8;
                  }
                  input, select{
                      height: 2.8rem;

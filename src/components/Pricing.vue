@@ -14,19 +14,19 @@
                  </div>
                  <div class="body">
                     <h6><i class="fa fa-check-square"></i> &#8358;20,000 to &#8358;30,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;30,000 to &#8358;45,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;40,000 to &#8358;60,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;50,000 to &#8358;75,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;60,000 to &#8358;90,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;70,000 to &#8358;105,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;80,000 to &#8358;120,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;90,000 to &#8358;135,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;100,000 to &#8358;150,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;200,000 to &#8358;300,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;300,000 to &#8358;450,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;400,000 to &#8358;600,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;500,000 to &#8358;750,000</h6>
-                    <small>Kindly note your investment cycle starts counting only when we have confirmed your payment and it takes 4 days to cashout from this plan. Terms and conditions apply</small><br>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;5,000 to &#8358;6,500</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;10,000 to &#8358;13,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;20,000 to &#8358;26,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;30,000 to &#8358;39,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;40,000 to &#8358;52,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;50,000 to &#8358;65,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;60,000 to &#8358;78,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;70,000 to &#8358;91,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;80,000 to &#8358;104,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;90,000 to &#8358;117,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;100,000 to &#8358;130,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"> </i> &#8358;200,000 to &#8358;260,000</h6>
+                    <small>Kindly note your investment cycle starts counting only when we have confirmed your payment and it takes 5 days to cashout from this plan. Terms and conditions apply</small><br>
                     <div class="button__holder pt-5">
                          <router-link to="/signup" class="card__btn">Choose Plan</router-link>
                     </div>
@@ -49,21 +49,23 @@
               </div> -->
                <div class="card__content card3">
                  <div class="header text-center">
-                     <h4>PROMO PACKAGE</h4>
+                     <h4>GOLD PLAN/PACKAGE</h4>
                  </div>
                  <div class="body">
-                    <h6><i class="fa fa-check-square"></i> &#8358;100,000 to &#8358;300,000 (Promo package)</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;200,000 to &#8358;600,000 (Promo package)</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;300,000 to &#8358;900,000 (Promo package)</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;400,000 to &#8358;1,200,000 (Promo package)</h6>
-                      <small>Kindly note your investment cycle starts counting only when we have confirmed your payment and you can cash out in 24 hours. Terms and conditions apply</small><br><br>
-                    <h4>GOLD JACKPOT PROMO PACKAGE</h4>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;500,000 to &#8358;1,500,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;600,000 to &#8358;1,800,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;700,000 to &#8358;2,100,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;800,000 to &#8358;2,400,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;900,000 to &#8358;2,700,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;1,000,000 to &#8358;3,000,000</h6>
+                    <h6><i class="fa fa-check-square"></i> &#8358;300,000 to &#8358;600,000 (Gold package)</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;400,000 to &#8358;800,000 (Promo package)</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;500,000 to &#8358;1,000,000 (Gold package)</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;600,000 to &#8358;1,200,000 (Gold package)</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;700,000 to &#8358;1,400,000 (Gold package)</h6>
+
+                    <h4>VVIP PACKAGE</h4>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;800,000 to &#8358;1,800,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;900,000 to &#8358;2,000,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;1,000,000 to &#8358;2,200,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;2,000,000 to &#8358;4,400,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;3,000,000 to &#8358;6,600,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;4,000,000 to &#8358;8,800,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;5,000,000 to &#8358;11,800,000</h6>
                   <div class="button__holder pt-5">
                          <router-link to="/signup" class="card__btn">Choose Plan</router-link>
                     </div>

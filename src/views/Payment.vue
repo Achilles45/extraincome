@@ -13,13 +13,14 @@
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
                 <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr>
                  <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
+                  <li><router-link to="/dashboard/upload"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Upload Payment</router-link></li><hr>
                  <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
             <br><br><br><br>
            </div>
            <div class="dashboard__right">
-               <div class="dashoard__heading d-none d-md-block">
+               <!-- <div class="dashoard__heading d-none d-md-block">
                  <div class="heading__content d-flex justify-content-between">
                       <div class="toggler">
                       <i class="fa fa-bars"></i>
@@ -28,13 +29,13 @@
                       <h6>{{email}}</h6>
                   </div>
                  </div>
-               </div>
+               </div> -->
               <div class="right__wrapper">
                   <div class="heading d-flex justify-content-between">
                   <div class="content">
                    <!-- <h5>Welcome Back!</h5> -->
-                    <h5>Make Payment</h5>
-                         <h4>{{ name }}</h4>
+                    <h5 style="color: white">Make Payment</h5>
+                         <h4 style="color: white">{{ name }}</h4>
                   </div>
                     <div @click.prevent="show()" class="navbar__toggler">
                       <i class="fa fa-bars"></i>
@@ -44,14 +45,11 @@
               <div id="dashboard">
              <small>You can make your deposit with any of the following methods immediately.</small>
              <hr>
-              <div v-if="verifyuser == 'false'" class="red">
-                  Your account has not been verified. Please make your payment for verification or call &nbsp; <a href="tel:09022131450">09022131450</a>
-              </div><br>
                <div>
                   <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/tickers/?locale=en#%7B%22symbols%22%3A%5B%7B%22title%22%3A%22EUR%2FUSD%22%2C%22proName%22%3A%22FX_IDC%3AEURUSD%22%7D%2C%7B%22description%22%3A%22GBP%2FUSD%22%2C%22proName%22%3A%22FX%3AGBPUSD%22%7D%2C%7B%22description%22%3A%22USD%2FJPY%22%2C%22proName%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22NZD%2FUSD%22%2C%22proName%22%3A%22FX%3ANZDUSD%22%7D%2C%7B%22description%22%3A%22AUD%2FUSD%22%2C%22proName%22%3A%22FX%3AAUDUSD%22%7D%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A72%2C%22utm_source%22%3A%22cryptomorefx.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22tickers%22%7D" style="box-sizing: border-box; height: 72px; width: 100%;"></iframe>
               </div>
               <div class="alert alert-success">
-                  Please, contact admin for payment details or call  <a href="tel:08164950288">08164950288</a>. Call same number after making payment for account verification!
+                  Please, contact admin for payment details or call  <a href="tel:08164950288">08164950288</a>
               </div>
                   <div class="summary__wrapper">
                   <div class="summary__card two pt-4">
@@ -85,7 +83,7 @@
               </div>
               <hr>
               <div></div>
-              <!-- <p>After making paymen, please send a message to to customer care using the live chat or email to info@diamondinvestment.ltd so your payment can be immediately approved.</p> -->
+              <p>After making payment, please upload your proof of payment in your dashboard so your payment can be immediately approved.</p>
               </div>
             <!--End of Dashboard
             =========================-->
@@ -152,7 +150,6 @@ export default {
                 this.account_number = doc.data().account_number
                 this.account_name = doc.data().account_name
                 this.wallet_address = doc.data().wallet_address
-                this.verifyuser = doc.data().verifyuser
             })
         })
     }
@@ -167,7 +164,7 @@ export default {
     grid-template-columns:  260px 1fr;
     // grid-gap: 30px;
     .dashboard__left{
-        background: #252525;
+        background: #0c0f1b;
         padding: 1rem 2rem;
         color:#fff;
         height: 100% !important;
@@ -202,18 +199,29 @@ export default {
         }
     }
     .dashboard__right{
-        background: #F4F6F9;
+        background: #0c0f1b;
         // padding: 3rem 2.5rem;
         .right__wrapper{
               padding: 1rem 2rem;
+              .heading{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  position: relative;
+                  .navbar__toggler{
+                      color:$primary-color;
+                      position: absolute;
+                      right: 5%;
+                  }
+              }
         }
         h4{
            font-weight: 400;
         }
        small{
-            color:#627081;
+            color:#fff;
            font-size: .8rem;
-           font-weight: bold;
+           font-weight: normal;
            opacity: .8;
        }
        .dashoard__heading{
@@ -247,7 +255,6 @@ export default {
                     font-size: 1rem;
                 }
             }
-            
             .one{
                     background: #00C292;
                 }
@@ -312,15 +319,17 @@ export default {
             width: 100vw;
         }
         h5{
-            color:#454545;
+            color:#fff;
             font-weight: bold;
-            padding-bottom: 1.2rem;
-            padding-top: 1rem;
+            padding-bottom: 1rem;
+            padding-top: 1.5rem;
         }
         p{
             padding-top:1rem;
-            color:#545454;
-            font-size: .9rem;
+            color:#fff;
+            font-size: .8rem;
+            opacity: .7;
+            line-height: 1.8;
         }
     }
 }
@@ -339,17 +348,6 @@ export default {
     top: 0 !important;
 }
 
- .red{
-            background: rgb(161, 39, 39);
-            color: #fff;
-            padding: 1rem .5rem;
-            border-radius: 3px;
-            font-size: .85rem;
-            opacity: .9;
-             a{
-                color:#fff !important;
-            }
-        }
 //MEDIA QUERIES FOR SMALLER SCREENS
 @media only screen and (max-width: 600px){
     .dashboard{

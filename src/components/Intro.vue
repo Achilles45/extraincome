@@ -9,23 +9,20 @@
               </div>
               <div class="col-md-1"></div>
               <div class="col-md-7 pt-5">
-                          <p>Extra Income Investment company is an investment platform whereby you generate 50% returns on investment added to your capital in 4 working days as a first timer. 
-                        Note: Recommitment is 100% of your investment.<br />
-                        We have promo package plan for every new members that invested the promo package minimum is 50,000  to get 150,000k why the maximum is 1m to cash out 3m within 24hours.....</p>
-                        
+                          <p>Extra Income Investment company is an investment platform whereby you generate 30% returns on investment added to your capital in 5 working days as a first timer. 
+                        Note: Recommitment is 100% of your investment.<br /></p>
                         <p>How we make it happen</p>
                         <hr>
                         <div class="row">
                             <div class="col-md-6">
-                                      <p><i class="fa fa-check-square"></i> Natural honey production</p>
-                                        <p><i class="fa fa-check-square"></i> Bitcoin mining & selling of gold </p>
-                                        <p><i class="fa fa-check-square"></i> Import & Export of Agro Allied Products</p>
-                                        <p><i class="fa fa-check-square"></i> Foodstuffs exportation</p>
+                                      <p><i class="fa fa-check-square"></i> Binary Trading Options</p>
+                                        <p><i class="fa fa-check-square"></i> I.Q Options Trading </p>
+                                        <!-- <p><i class="fa fa-check-square"></i>Volatality Indices</p>
+                                        <p><i class="fa fa-check-square"></i> Mining of Bitcoin</p> -->
                             </div>
                             <div class="col-md-6">
-                        <p><i class="fa fa-check-square"></i> Power generation</p>
-                        <p><i class="fa fa-check-square"></i> Upstream petroleum services.</p>
-                        <p><i class="fa fa-check-square"></i> Lend money to the cooperative.</p>
+                                <p><i class="fa fa-check-square"></i>Volatality Indices</p>
+                                <p><i class="fa fa-check-square"></i> Mining of Bitcoin</p>
                             </div>
                         </div>
               </div>

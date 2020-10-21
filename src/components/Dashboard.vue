@@ -13,13 +13,14 @@
                <li><router-link to="/dashboard/overview"><i class="fa fa-cubes icons"></i>&nbsp;&nbsp; Overview</router-link></li><hr> 
                 <li><router-link to="/dashboard/profile"><i class="fa fa-users icons"></i>&nbsp;&nbsp; Profile</router-link></li><hr>
                  <li><router-link to="/dashboard/payment"><i class="fa fa-credit-card icons"></i>&nbsp;&nbsp; Deposit</router-link></li><hr> 
+                  <li><router-link to="/dashboard/upload"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Upload Payment</router-link></li><hr>
                  <li><router-link to="/dashboard/withdrawal"><i class="fa fa-clone icons"></i>&nbsp;&nbsp; Make Withdrawal</router-link></li><hr> 
                <li @click="logOut()" class="logout"><i class="fa fa-database icons"></i>&nbsp;&nbsp; Logout</li><hr>
             </ul>
             <br><br><br><br>
            </div>
            <div class="dashboard__right">
-               <div class="dashoard__heading d-none d-md-block">
+               <!-- <div class="dashoard__heading d-none d-md-block">
                  <div class="heading__content d-flex justify-content-between">
                       <div class="toggler">
                       <i class="fa fa-bars"></i>
@@ -28,12 +29,12 @@
                       <h6>{{email}}</h6>
                   </div>
                  </div>
-               </div>
+               </div> -->
               <div class="right__wrapper">
-                  <div class="heading d-flex justify-content-between">
+                  <div class="heading">
                   <div class="content">
-                   <h5>Welcome Back!</h5>
-                      <h4>{{ name }}</h4>
+                   <h5 style="color: white">Welcome Back!</h5>
+                      <h4 style="color: white">{{ name }}</h4>
                       <!-- <small>{{ firstCode }}</small> -->
                   <!-- <small>{{ accountNumber }}</small> -->
                   </div>
@@ -49,7 +50,7 @@
                   <iframe scrolling="no" allowtransparency="true" frameborder="0" src="https://s.tradingview.com/embed-widget/tickers/?locale=en#%7B%22symbols%22%3A%5B%7B%22title%22%3A%22EUR%2FUSD%22%2C%22proName%22%3A%22FX_IDC%3AEURUSD%22%7D%2C%7B%22description%22%3A%22GBP%2FUSD%22%2C%22proName%22%3A%22FX%3AGBPUSD%22%7D%2C%7B%22description%22%3A%22USD%2FJPY%22%2C%22proName%22%3A%22FX%3AUSDJPY%22%7D%2C%7B%22description%22%3A%22NZD%2FUSD%22%2C%22proName%22%3A%22FX%3ANZDUSD%22%7D%2C%7B%22description%22%3A%22AUD%2FUSD%22%2C%22proName%22%3A%22FX%3AAUDUSD%22%7D%5D%2C%22width%22%3A%22100%25%22%2C%22height%22%3A72%2C%22utm_source%22%3A%22cryptomorefx.com%22%2C%22utm_medium%22%3A%22widget%22%2C%22utm_campaign%22%3A%22tickers%22%7D" style="box-sizing: border-box; height: 72px; width: 100%;"></iframe>
               </div>
               <div v-if="verifyuser == 'false'" class="red">
-                  Your account has not been verified. Please make your payment for verification or call &nbsp; <a href="tel:08164950288">08164950288</a>
+                  Your account has not been verified. Please make your payment for verification or call <a href="tel:08164950288">08164950288</a>
               </div>
                   <div class="summary__wrapper">
                   <div class="summary__card one pt-4">
@@ -62,8 +63,18 @@
                     <div class="summary__card two pt-4">
                      <i class="fa fa-credit-card"></i>
                      <div class="content pl-4">
-                         <h6>Total Profit(50% plus your capital)</h6>
+                         <h6>Total Profit(30% plus your capital)</h6>
                          <h5>&#8358; {{ available_balance }}</h5>
+                     </div>
+                  </div>
+                  <div class="summary__card two pt-4">
+                     <!-- <i class="fa fa-home"></i> -->
+                     <div class="content pl-4">
+                         <!-- <h6>Bank Accounts</h6> -->
+                         <h6>Bank Name: {{ bank_name}}</h6>
+                         <hr>
+                         <h6>Account Number:  {{ account_number }}</h6>
+                         <h6>Account Name:  {{ account_name }}</h6>
                      </div>
                   </div>
                     <!-- <div class="summary__card three pt-4">
@@ -83,7 +94,12 @@
               </div>
               </div>
               <hr>
-              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of your investment and your capital would be paid back in 4 working days. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
+               <!-- <VueTradingView :options="{
+                symbol: 'NASDAQ:AAPL',
+                theme: 'dark',
+                width: '100%'
+                }" /> -->
+              <p class="note">Kindly note that your investment lifecycle will only begin to count when you have been verified to have made payment for your selected plan. Your returns of 30% of your investment and your capital would be paid back in 5 days for initial investment. Also, should you find any difficulties in using the platform, kindly use livechat widget to send a message and our customer success team will respond as soon as possible. Happy investing.</p>
               </div>
             <!--End of Dashboard
             =========================-->
@@ -103,7 +119,11 @@ export default {
             account_type:null,
             id:null,
             available_balance:null,
-            verifyuser:null
+            verifyuser:null,
+            bank_name: null,
+            account_number:null,
+            account_name:null,
+            wallet_address:null
         }
     },
     computed:{
@@ -146,6 +166,10 @@ export default {
                 this.account_type = doc.data().account_type,
                 this.verifyuser = doc.data().verifyuser
                 this.id = doc.data().user_id
+                this.bank_name = doc.data().bank_name
+                this.account_number = doc.data().account_number
+                this.account_name = doc.data().account_name
+                this.wallet_address = doc.data().wallet_address
             })
         })
     }
@@ -160,7 +184,7 @@ export default {
     grid-template-columns:  260px 1fr;
     // grid-gap: 30px;
     .dashboard__left{
-        background: #252525;
+        background: #0c0f1b;
         padding: 1rem 2rem;
         color:#fff;
         height: 100% !important;
@@ -194,25 +218,39 @@ export default {
         }
     }
     .dashboard__right{
-        background: #F4F6F9;
+        background: #0c0f1b;
         // padding: 3rem 2.5rem;
         .right__wrapper{
               padding: 2rem 2rem;
+              .heading{
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  position: relative;
+                  .navbar__toggler{
+                      color:#fff !important;
+                      position: absolute;
+                      right: 5%;
+                  }
+              }
         }
        small{
-            color:#627081;
+            color:#fff;
            font-size: .8rem;
            font-weight: bold;
-           opacity: .8;
+           opacity: .6;
        }
        .dashoard__heading{
-           background-color: #FBAE1C;
+           background-color: #0c0f1b;
            padding: 1.2rem 2rem;
            display: flex;
            justify-content: space-between;
           h6{
                font-size: .9rem;
                color: #fff;
+          }
+          h5{
+              color: #fff !important;
           }
        }
         .summary__wrapper{
@@ -256,9 +294,11 @@ export default {
                 
         }
         .note{
-            color: #627081 !important;
+            color: #fff !important;
             font-size: .8rem;
-            line-height: 1.7;
+            line-height: 1.8;
+            font-weight: 400;
+            opacity: .7;
         }
             //REQUEST FORM
             form{
