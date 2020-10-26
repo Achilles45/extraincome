@@ -9,7 +9,7 @@
               </div>
               <div class="col-md-1"></div>
               <div class="col-md-7 pt-5">
-                          <p>Extra Income Investment company is an investment platform whereby you generate 30% returns on investment added to your capital in 5 working days as a first timer. 
+                          <p>Extra Income Investment company is an investment platform whereby you generate 50% returns on investment added to your capital in 4 working days as a first timer. 
                         Note: Recommitment is 100% of your investment.<br /></p>
                         <p>How we make it happen</p>
                         <hr>

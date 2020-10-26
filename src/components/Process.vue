@@ -28,7 +28,7 @@
                       </div>
                       <div class="text">
                           <h4>Maturity & Payout</h4>
-                          <p>Our systems is able to track every investor and upon investment maturity, your capital and 30% returns is paid to you. No hidden charges, no story.</p>
+                          <p>Our systems is able to track every investor and upon investment maturity, your capital and 50% returns is paid to you. No hidden charges, no story.</p>
                       </div>
                   </div>
               </div>
