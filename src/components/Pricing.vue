@@ -67,10 +67,10 @@
                     <h6><i class="fa fa-check-square"></i> &#8358;1,000,000 to &#8358;2,000,000 (Promo package)</h6>
 
                     <h4 class="header text-center">GOLD PACKAGE (7 working days)</h4>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;200,000 to &#8358;4,400,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;300,000 to &#8358;6,600,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;400,000 to &#8358;8,800,000</h6>
-                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;500,000 to &#8358;11,000,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;2,000,000 to &#8358;4,000,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;3,000,000 to &#8358;6,000,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;4,000,000 to &#8358;8,000,000</h6>
+                    <h6 class="pb-2"><i class="fa fa-check-square"></i> &#8358;5,000,000 to &#8358;10,000,000</h6>
                   <div class="button__holder pt-5">
                          <router-link to="/signup" class="card__btn">Choose Plan</router-link>
                     </div>

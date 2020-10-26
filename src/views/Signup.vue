@@ -52,10 +52,10 @@
                             <option value="1,000,000 promo">&#8358;1,000,000 to &#8358;2,000,000 (Promo plan)</option> 
                         
                           
-                            <option value="2,000,000 Gold">&#8358;2,000,000 to &#8358;4,400,000 (Gold plan)</option>
-                            <option value="3,000,000 Gold">&#8358;3,000,000 to &#8358;6,600,000 (Gold plan)</option> 
-                            <option value="4,000,000 Gold">&#8358;4,000,000 to &#8358;8,800,000 (Gold plan)</option> 
-                            <option value="5,000,000 Gold">&#8358;5,000,000 to &#8358;11,000,000 (Gold plan)</option> 
+                            <option value="2,000,000 Gold">&#8358;2,000,000 to &#8358;4,000,000 (Gold plan)</option>
+                            <option value="3,000,000 Gold">&#8358;3,000,000 to &#8358;6,000,000 (Gold plan)</option> 
+                            <option value="4,000,000 Gold">&#8358;4,000,000 to &#8358;8,000,000 (Gold plan)</option> 
+                            <option value="5,000,000 Gold">&#8358;5,000,000 to &#8358;10,000,000 (Gold plan)</option> 
                           
                          </select>
                </div>
