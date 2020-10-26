@@ -51,7 +51,7 @@
               </div> -->
                <div class="card__content card3">
                  <div class="header text-center">
-                     <h4>PROMO PACKAGE/PLANS</h4>
+                     <h4>PROMO PACKAGE/PLANS (24 Hours)</h4>
                  </div>
                  <div class="body">
                     <h6><i class="fa fa-check-square"></i> &#8358;50,000 to &#8358;100,000 (Promo package)</h6>
